@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<!-- saved from url=(0023)https://zzw.fgscjg.com/ -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="renderer" content="webkit">
+<meta name="force-rendering" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+<meta name="applicable-device" content="pc,mobile"> 
+<title>站长湾 - 免费收录站长们网站的导航</title>
+<meta name="keywords" content="">
+<meta name="description" content="一个免费收录站长们的网站和各行业名站、有趣、实用网址的简约导航">
+<meta itemprop="name" content="站长湾">
+<meta itemprop="image" content="./images/logo_default.png">
+<meta name="description" itemprop="description" content="演示站">
+<link rel="shortcut icon" href="./images/favicon_default.ico">
+<link rel="stylesheet" href="./css/font-awesome.min.css" type="text/css">
+<link rel="stylesheet" href="./css/style.css" type="text/css">
+<link rel="alternate" type="application/rss+xml" href="https://zzw.fgscjg.com/feed.php" title="站长湾">
+<!--[if lt IE 9]><div class="fuck-ie"><p class="tips">*您的IE浏览器版本过低，为获得更好的体验请使用Chrome、Firefox或其他现代浏览器!</p></div><![endif]-->
+<script src="./js/jquery-2.2.4.min.js" type="text/javascript"></script>
+<script src="./js/zblogphp.js" type="text/javascript"></script>
+<script src="./php/c_html_js_add.php" type="text/javascript"></script><script src="./js/prism.js" type="text/javascript"></script><link rel="stylesheet" type="text/css" href="./css/prism.css">
+</head>
+<body>
+    <header class="header">
+        <div class="h-fix">
+            <div class="container">
+                <h1 class="logo">
+                    <a href="https://zzw.fgscjg.com/" title="站长湾">
+                        <img id="light-logo" src="./images/logo_default.png" alt="站长湾" title="站长湾">
+                        <img id="dark-logo" src="./images/darklogo_default.png" alt="站长湾" title="站长湾">                        
+                    </a>
+                </h1>
+                <div id="m-btn" class="m-btn"><i class="fa fa-bars"></i></div>
+                <div class="search">
+                    <i class="s-btn off fa fa-search"></i>
+                    <div class="s-form">
+                        <i class="arrow fa fa-caret-up"></i>
+                        <form name="search" method="post" class="sform" action="https://zzw.fgscjg.com/zb_system/cmd.php?act=search">
+                            <input class="sinput" name="q" type="text" placeholder="请输入搜索词">
+                            <button><i class="fa fa-search"></i></button>
+                        </form>             
+                    </div>
+                </div>   
+                <div class="darkmode">
+                    <a href="javascript:switchNightMode()" target="_self" class=""><i class="fa fa-moon-o"></i></a>
+                </div>
+                <nav class="nav-bar" id="nav-box" data-type="index" data-infoid="">
+                    <ul class="nav">
+                        <li id="nvabar-item-index" class="active"><a href="{dede:global.cfg_basehost/}">首页</a></li>
+                        <li id="navbar-category-1" class="li-cate-1">
+                        {dede:channel type='top' row='5'} 
+                        <a href="[field:typeurl/]">[field:typename/]</a> 
+                        {/dede:channel} 
+                        </li>                        
+                </nav>
+                                <div class="submit fr">
+                                        <a href="https://zzw.fgscjg.com/2.html" target="_blank" class="a transition">
+                                            <i class="fa fa-heart">
+                                            </i>
+                                            申请收录
+                                        </a>
+                </div>   
+                            </div>
+        </div>
+    </header>
+    <div id="mask">
+    </div>
+<p class="index-breadcrumb"></p>
+<div id="banner-bear" class="preserve3d csstransforms3d">
+    <p class="typing web-font transition">站长湾免费收录站长们的网站</p>
+        <div class="primary-menus">
+        <ul class="selects">
+            <li>常用</li>
+                        <li class="current" data-target="search_1"><span>百度</span></li>                        <li data-target="search_2"><span>Bing</span></li>                        <li data-target="search_3"><span>360</span></li>  
+                        <li data-target="search_4"><span>搜狗</span></li>  
+                        <li data-target="search_5"><span>天猫</span></li> 
+                        <li data-target="search_6"><span>淘宝</span></li>  
+                        <li data-target="search_7"><span>知乎</span></li> 
+                        <li data-target="search_8"><span>站内</span></li> 
+        </ul>
+        <div class="cont">
+            <div class="left-cont">
+                                <form class="search" id="search_1" action="https://www.baidu.com/s?wd=" method="get" target="_blank">  
+                    <input type="text" name="wd" class="s" placeholder="请输入关键词">
+                    <button type="submit" name="" class="btn">百度搜索</button>
+                </form>
+                                                <form class="search hidden" id="search_2" action="https://cn.bing.com/search?q=" method="get" target="_blank">  
+                    <input type="text" name="q" class="s" placeholder="请输入关键词">
+                    <button type="submit" name="" class="btn">Bing搜索</button>
+                </form>
+                                                <form class="search hidden" id="search_3" action="https://www.so.com/s?q=" method="get" target="_blank">  
+                    <input type="text" name="q" class="s" placeholder="请输入关键词">
+                    <button type="submit" name="" class="btn">360搜索</button>
+                </form>  
+                                                <form class="search hidden" id="search_4" action="https://www.sogou.com/web?query=" method="get" target="_blank">  
+                    <input type="text" name="query" class="s" placeholder="请输入关键词">
+                    <button type="submit" name="" class="btn">搜狗搜索</button>
+                </form> 
+                                                <form class="search hidden" id="search_5" action="https://list.tmall.com/search_product.htm?q=" method="get" target="_blank">  
+                    <input type="text" name="q" class="s" placeholder="请输入关键词">
+                    <button type="submit" name="" class="btn">天猫搜索</button>
+                </form>   
+                                                <form class="search hidden" id="search_6" action="https://s.taobao.com/search?q=" method="get" target="_blank">  
+                    <input type="text" name="q" class="s" placeholder="请输入关键词">
+                    <button type="submit" name="" class="btn">淘宝搜索</button>
+                </form>   
+                                                <form class="search hidden" id="search_7" action="https://www.zhihu.com/search?q=" method="get" target="_blank">  
+                    <input type="text" name="q" class="s" placeholder="请输入关键词">
+                    <button type="submit" name="" class="btn">知乎搜索</button>
+                </form>
+                                                <form class="search hidden" id="search_8" action="https://zzw.fgscjg.com/search.php" method="get" target="_blank">  
+                    <input type="text" name="q" class="s" placeholder="请输入关键词">
+                    <button type="submit" name="" class="btn">站内搜索</button>
+                </form>                
+                            </div>
+        </div>
+    </div> 
+        <div class="submit fr">
+                <a href="https://zzw.fgscjg.com/2.html" target="_blank" class="a transition"><i class="fa fa-heart"></i>申请收录</a>
+    </div>     
+	<div class="banner-wrap scenes-ready">
+		<div id="stage">
+			<div class="space"></div>
+			<div class="mountains">
+				<div class="mountain mountain-1"></div>
+				<div class="mountain mountain-2"></div>
+				<div class="mountain mountain-3"></div>
+			</div>
+			<div class="bear"></div>
+		</div>
+	</div>
+</div>
+  
+<div class="container">
+    <!-- 广告位AD1  -->
+                    
+    <!-- 收录统计  -->
+    	<div class="row same-height row-position"> 
+            	
+	       		<div class="col-md-1 quick-nav">
+            <div class="content-sidebar same-height-l">
+            <dl id="goto"><dt style="top: 13px;"><span class="show-list"></span></dt><dd class="current"><a href="https://zzw.fgscjg.com/#cate21" class="auto-scroll" rel="nofollow" data-offset="-78" data-speed="500">文章样式</a></dd><dd><a href="https://zzw.fgscjg.com/#cate1" class="auto-scroll" rel="nofollow" data-offset="-78" data-speed="500">站长常用</a></dd><dd><a href="https://zzw.fgscjg.com/#cate2" class="auto-scroll" rel="nofollow" data-offset="-78" data-speed="500">文娱</a></dd><dd><a href="https://zzw.fgscjg.com/#cate3" class="auto-scroll" rel="nofollow" data-offset="-78" data-speed="500">生活</a></dd><dd><a href="https://zzw.fgscjg.com/#cate6" class="auto-scroll" rel="nofollow" data-offset="-78" data-speed="500">全球趣站</a></dd><dd><a href="https://zzw.fgscjg.com/#cate14" class="auto-scroll" rel="nofollow" data-offset="-78" data-speed="500">旅游相关</a></dd><dd><a href="https://zzw.fgscjg.com/#cate15" class="auto-scroll" rel="nofollow" data-offset="-78" data-speed="500">网上购物</a></dd><dd><a href="https://zzw.fgscjg.com/#cate16" class="auto-scroll" rel="nofollow" data-offset="-78" data-speed="500">互联网</a></dd><dd><a href="https://zzw.fgscjg.com/#cate5" class="auto-scroll" rel="nofollow" data-offset="-78" data-speed="500">博客</a></dd><dd><a href="https://zzw.fgscjg.com/#cate4" class="auto-scroll" rel="nofollow" data-offset="-78" data-speed="500">行业</a></dd>
+						</dl></div>
+        </div>   
+         
+        <div class="col-md-12 same-height-r">
+		   		   		   		   		
+        <div class="part current" id="cate21" data-title="文章样式" style="position: relative;">
+            <div style="display: none; width: 1106.66px; height: 57px; margin: 0px; float: none;"></div><p class="tt sticky" style="width: 1106.67px;">
+                <strong>文章样式</strong>
+                <a title="更多文章样式的内容" href="https://zzw.fgscjg.com/wenzhang">更多+</a>
+            </p>
+            <div class="items">
+                <div class="row">
+<div class="col-xs-6 col-sm-4 col-md-3">
+    <div class="item art-item transition">
+        <a class="art-a" href="https://zzw.fgscjg.com/wenzhang/83.html" title="好人阿北，和拧巴的豆瓣" target="_blank">
+            <img class="img-cover" src="./images/201911041572846044301777.jpg" alt="好人阿北，和拧巴的豆瓣" title="好人阿北，和拧巴的豆瓣">
+        </a>
+        <h3 class="art-title"><a class="" href="https://zzw.fgscjg.com/wenzhang/83.html" title="好人阿北，和拧巴的豆瓣" target="_blank">好人阿北，和拧巴的豆瓣</a></h3>
+        <p>
+        								只有豆瓣用户自己可以骂豆瓣。编者按：本文来自微信公众号“毒眸”（ID：youhaoxifilm），作者张娜、师烨东，编辑江宇琦，36氪经授权发布。“太好了，明天大家又可以开始骂豆瓣了。”10月20日凌...</p>
+        
+    </div>
+</div>                     		
+                    </div>
+            </div>
+        </div>   
+        <div class="part" id="cate1" data-title="站长常用" style="position: relative;">
+            <div style="display: none; width: 1106.66px; height: 57px; margin: 0px; float: none;"></div><p class="tt sticky" style="width: 1106.67px;">
+                <strong>站长常用</strong>
+                <a title="更多站长常用的内容" href="https://zzw.fgscjg.com/zhanzhangchangyong">更多+</a>
+            </p>
+            <div class="items">
+                <div class="row">  
+<div class="col-xs-6 col-sm-4 col-md-3">
+    <div class="item">
+        <a class="link" target="_blank" href="https://www.aizhan.com/" rel="nofollow"><i class="autoleft fa fa-angle-right" title="直达网站"></i></a>
+        <a class="a" href="https://zzw.fgscjg.com/zhanzhangchangyong/3.html" title="爱站网" target="_blank">
+            <img src="./images/201907121562925822366822.png" alt="爱站网" title="爱站网">
+            <h3>爱站网</h3>
+            <p>
+            											比起站长之家的站长工具，这个总算是越做越好，随着数据量和技术的精进，统计越来越准确。爱站网站长工具提供网站收录查询和站长查询以及百度权重值查询等多个站长工具，免费查询各种工具，包括有关键词排名查询，百...</p>
+        </a>
+    </div>
+</div> 	
+                </div>
+            </div>
+        </div>  
+        <div class="part" id="cate2" data-title="文娱" style="position: relative;">
+            <div style="display: none; width: 1106.66px; height: 57px; margin: 0px; float: none;"></div><p class="tt sticky" style="width: 1106.67px;">
+                <strong>文娱</strong>
+                <a title="更多文娱的内容" href="https://zzw.fgscjg.com/wenyu">更多+</a>
+            </p>
+            <div class="items">
+                <div class="row">
+<div class="col-xs-6 col-sm-4 col-md-3">
+    <div class="item">
+        <a class="link" target="_blank" href="https://www.ageeye.cn/" rel="nofollow"><i class="autoleft fa fa-angle-right" title="直达网站"></i></a>
+        <a class="a" href="https://zzw.fgscjg.com/wenyu/10.html" title="发现中国" target="_blank">
+            <img src="./images/201907121562930921819021.png" alt="发现中国" title="发现中国">
+            <h3>发现中国</h3>
+            <p>
+            											发现中国是⼀个知识地图制作分享平台，它将地图和文字结合， 反映中国历史、 军事、 地理、 文化等方面的知识，向用户提供地图协作分享服务...</p>
+        </a>
+    </div>
+</div>              	
+                </div>
+            </div>
+        </div>  
+        <div class="part" id="cate3" data-title="生活" style="position: relative;">
+            <div style="display: none; width: 1106.66px; height: 57px; margin: 0px; float: none;"></div><p class="tt sticky" style="width: 1106.67px;">
+                <strong>生活</strong>
+                <a title="更多生活的内容" href="https://zzw.fgscjg.com/shenghuo">更多+</a>
+            </p>
+            <div class="items">
+                <div class="row">    
+<div class="col-xs-6 col-sm-4 col-md-3">
+    <div class="item">
+        <a class="link" target="_blank" href="http://www.dataoke.com/" rel="nofollow"><i class="autoleft fa fa-angle-right" title="直达网站"></i></a>
+        <a class="a" href="https://zzw.fgscjg.com/wangshanggouwu/21.html" title="大淘客联盟" target="_blank">
+            <img src="./images/201907141563085897416918.png" alt="大淘客联盟" title="大淘客联盟">
+            <h3>大淘客联盟</h3>
+            <p>
+            											大淘客联盟dataoke.com专注优质商品内容打造，为广大淘宝客提供精选商品，节省时间及人力成本！联盟本着专注单品、极致转化的使命，提供业务包括领券优惠精选、鹊桥精选，以及淘宝客运营干货，帮助大家实...</p>
+        </a>
+    </div>
+</div>
+                </div>
+            </div>
+        </div>  
+        <div class="part" id="cate6" data-title="全球趣站" style="position: relative;">
+            <div style="display: none; width: 1106.66px; height: 57px; margin: 0px; float: none;"></div><p class="tt sticky" style="width: 1106.67px;">
+                <strong>全球趣站</strong>
+                <a title="更多全球趣站的内容" href="https://zzw.fgscjg.com/quanqiuquzhan">更多+</a>
+            </p>
+            <div class="items">
+                <div class="row">     
+<div class="col-xs-6 col-sm-4 col-md-3">
+    <div class="item">
+        <a class="link" target="_blank" href="http://nodtotherhythm.com/" rel="nofollow"><i class="autoleft fa fa-angle-right" title="直达网站"></i></a>
+        <a class="a" href="https://zzw.fgscjg.com/quanqiuquzhan/12.html" title="鬼畜点头节奏" target="_blank">
+            <img src="./images/201907121562931946526144.jpg" alt="鬼畜点头节奏" title="鬼畜点头节奏">
+            <h3>鬼畜点头节奏</h3>
+            <p>
+            											可以让静态图动起来唱歌的简单应用，老人头像有点...只做你自己的吧还是，进入网站后，点击MAKE YOUR OWN!开始制作，根据提示操作即可...</p>
+        </a>
+    </div>
+</div>	
+                </div>
+            </div>
+        </div>   	
+        <div class="part" id="cate14" data-title="旅游相关" style="position: relative;">
+            <div style="display: none; width: 1106.66px; height: 57px; margin: 0px; float: none;"></div><p class="tt sticky" style="width: 1106.67px;">
+                <strong>旅游相关</strong>
+                <a title="更多旅游相关的内容" href="https://zzw.fgscjg.com/lvyou">更多+</a>
+            </p>
+            <div class="items">
+                <div class="row">           
+<div class="col-xs-6 col-sm-4 col-md-3">
+    <div class="item">
+        <a class="link" target="_blank" href="http://www.hualvtu.com/" rel="nofollow"><i class="autoleft fa fa-angle-right" title="直达网站"></i></a>
+        <a class="a" href="https://zzw.fgscjg.com/lvyou/26.html" title="画旅途" target="_blank">
+            <img src="./images/201907141563087558826263.png" alt="画旅途" title="画旅途">
+            <h3>画旅途</h3>
+            <p>
+            											画旅途的大图交互体验强调的是拍摄带来的快感，完全和那些充满商业气息的贱货旅行站点格格不入，如诗似画，喜欢的人自然喜欢...</p>
+        </a>
+    </div>
+</div>
+                </div>
+            </div>
+        </div>   		
+        <div class="part" id="cate15" data-title="网上购物" style="position: relative;">
+            <div style="display: none; width: 1106.66px; height: 57px; margin: 0px; float: none;"></div><p class="tt sticky" style="width: 1106.67px;">
+                <strong>网上购物</strong>
+                <a title="更多网上购物的内容" href="https://zzw.fgscjg.com/wangshanggouwu">更多+</a>
+            </p>
+            <div class="items">
+                <div class="row">       
+<div class="col-xs-6 col-sm-4 col-md-3">
+    <div class="item">
+        <a class="link" target="_blank" href="http://www.dataoke.com/" rel="nofollow"><i class="autoleft fa fa-angle-right" title="直达网站"></i></a>
+        <a class="a" href="https://zzw.fgscjg.com/wangshanggouwu/21.html" title="大淘客联盟" target="_blank">
+            <img src="./images/201907141563085897416918.png" alt="大淘客联盟" title="大淘客联盟">
+            <h3>大淘客联盟</h3>
+            <p>
+            											大淘客联盟dataoke.com专注优质商品内容打造，为广大淘宝客提供精选商品，节省时间及人力成本！联盟本着专注单品、极致转化的使命，提供业务包括领券优惠精选、鹊桥精选，以及淘宝客运营干货，帮助大家实...</p>
+        </a>
+    </div>
+</div>
+                </div>
+            </div>
+        </div>  
+        <div class="part" id="cate16" data-title="互联网" style="position: relative;">
+            <div style="display: none; width: 1106.66px; height: 57px; margin: 0px; float: none;"></div><p class="tt sticky" style="width: 1106.67px;">
+                <strong>互联网</strong>
+                <a title="更多互联网的内容" href="https://zzw.fgscjg.com/hulianwang">更多+</a>
+            </p>
+            <div class="items">
+                <div class="row">            
+<div class="col-xs-6 col-sm-4 col-md-3">
+    <div class="item">
+        <a class="link" target="_blank" href="http://www.shukoe.com/" rel="nofollow"><i class="autoleft fa fa-angle-right" title="直达网站"></i></a>
+        <a class="a" href="https://zzw.fgscjg.com/hulianwang/28.html" title="广告联盟交流" target="_blank">
+            <img src="./images/201907141563088293571187.png" alt="广告联盟交流" title="广告联盟交流">
+            <h3>广告联盟交流</h3>
+            <p>
+            											广告联盟资讯站，免费教你做广告联盟怎么赚钱的技巧、点击方法和感悟等，本站专注点击广告联盟赚钱和广告联盟评测，为站长赚钱提供重要的参考意见...</p>
+        </a>
+    </div>
+</div>	
+                </div>
+            </div>
+        </div>   		
+   		
+
+        		   		   		   		
+   		
+        <div class="part" id="cate5" data-title="博客" style="position: relative;">
+            <div style="display: none; width: 1106.66px; height: 57px; margin: 0px; float: none;"></div><p class="tt sticky" style="width: 1106.67px;">
+                <strong>博客</strong>
+                <a title="更多博客的内容" href="https://zzw.fgscjg.com/boke">更多+</a>
+            </p>
+            <div class="items">
+                <div class="row">
+                        
+	 
+    
+ 
+         
+            
+<div class="col-xs-6 col-sm-4 col-md-3">
+    <div class="item">
+        <a class="link" target="_blank" href="https://boke112.com/" rel="nofollow"><i class="autoleft fa fa-angle-right" title="直达网站"></i></a>
+        <a class="a" href="https://zzw.fgscjg.com/boke/27.html" title="boke112导航" target="_blank">
+            <img src="./images/201907141563087930673978.png" alt="boke112导航" title="boke112导航">
+            <h3>boke112导航</h3>
+            <p>
+            											boke112导航免费收录个人独立博客，提供博客导航和博客目录分类检索功能，关注WordPress、Plugins、Themes、zblog、建站经验、博客问答，力求打造一个最实用的博主交流平台...</p>
+        </a>
+    </div>
+</div>    	
+                </div>
+            </div>
+        </div>   		 		
+        <div class="part" id="cate4" data-title="行业" style="position: relative;">
+            <div style="display: none; width: 1106.66px; height: 57px; margin: 0px; float: none;"></div><p class="tt sticky" style="width: 1106.67px;">
+                <strong>行业</strong>
+                <a title="更多行业的内容" href="https://zzw.fgscjg.com/hangye">更多+</a>
+            </p>
+            <div class="items">
+                <div class="row">
+                        
+	 
+    
+ 
+         
+            
+<div class="col-xs-6 col-sm-4 col-md-3">
+    <div class="item">
+        <a class="link" target="_blank" href="http://www.shukoe.com/" rel="nofollow"><i class="autoleft fa fa-angle-right" title="直达网站"></i></a>
+        <a class="a" href="https://zzw.fgscjg.com/hulianwang/28.html" title="广告联盟交流" target="_blank">
+            <img src="./images/201907141563088293571187.png" alt="广告联盟交流" title="广告联盟交流">
+            <h3>广告联盟交流</h3>
+            <p>
+            											广告联盟资讯站，免费教你做广告联盟怎么赚钱的技巧、点击方法和感悟等，本站专注点击广告联盟赚钱和广告联盟评测，为站长赚钱提供重要的参考意见...</p>
+        </a>
+    </div>
+</div>    	
+                </div>
+            </div>
+        </div>  
+        		        </div>     
+	</div> 
+        <div class="f-link part">
+        <p class="tt"><strong>友情链接</strong></p>    
+        <ul id="flink" class="container"><li><a href="https://app.zblogcn.com/?auth=454abaa3-b7a0-4127-add2-f1489907ebb7" target="_blank" title="我的其他主题" <="" a="" class="fa fa-star-o">我的其他主题</a></li><li><a href="https://evolbrain.com/" target="_blank" title="evolbrain" class="fa fa-star-o">evolbrain</a></li><li><a href="https://www.niuzdh.com/" target="_blank" title="牛站导航" class="fa fa-star-o">牛站导航</a></li></ul>
+    </div>
+      
+</div>
+<div class="footer-copyright ">
+	<div class="container">
+		<p>
+		    
+			<span>Copyright © 2017 ~ 2019</span><span>基于<a href="https://www.zblogcn.com/" target="_blank"> Z-Blog PHP </a>程序搭建</span><span>主题作者:<a target="_blank" rel="nofollow" href="https://app.zblogcn.com/?auth=454abaa3-b7a0-4127-add2-f1489907ebb7">随然</a></span><span>联系QQ：201825640</span><span><a target="_blank" rel="nofollow" href="http://beian.miit.gov.cn/">川ICP备8888888号</a></span>            <!--统计代码-->
+            		</p>
+		<img id="light-flogo" class="flogo" src="./images/logo_default.png" alt="站长湾" title="站长湾">
+		<img id="dark-flogo" class="flogo" src="./images/darklogo_default.png" alt="站长湾" title="站长湾">		
+	</div>
+</div>
+<!--提交和回顶-->
+<a id="quick_submit" class="fa fa-pencil" rel="nofollow" href="https://zzw.fgscjg.com/2.html"></a>
+<div id="backtop" class="fa fa-angle-up"></div>
+<script src="./js/jquery.cookie.min.js" type="text/javascript"></script>
+<script src="./js/main.js" type="text/javascript"></script>
+<!--初始化Swiper-->
+<script src="./js/swiper.js" type="text/javascript"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+    pagination: '.swiper-pagination',
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    centeredSlides: true,
+    autoplay: 3500,
+    slidesPerView: 1,
+    paginationClickable: true,
+    autoplayDisableOnInteraction: false,
+    spaceBetween: 0,
+    loop: true
+});
+</script>     
+<script>
+/* tooltip.js初始化 */
+$('.autoleft').tooltip({
+    align: 'autoLeft',
+    fade: {
+        duration: 200,
+        opacity: 0.8
+    }
+});
+</script>
+<script>
+/* jQuery.positionSticky.js初始化 */
+jQuery('.sticky').positionSticky({offsetTop: 78});
+</script>
+<!--[if lt IE 9]><script src="https://zzw.fgscjg.com/zb_users/theme/suiranx_nav/script/html5-css3.js"></script><![endif]-->
+
+</body></html>
